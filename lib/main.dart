@@ -10,25 +10,24 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Aplikasi Mahasiswa",
       debugShowCheckedModeBanner: false,
-
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.green,
-        ),
-        scaffoldBackgroundColor: Colors.green.shade50,
-      ),
-
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Aplikasi Mahasiswa"),
+          title: const Text('Aplikasi Mahasiswa'),
           backgroundColor: Colors.green,
           foregroundColor: Colors.white,
+          centerTitle: true,
         ),
-
+        backgroundColor: const Color(0xFFE8F5E9),
         body: const Center(
-          child: Text("Muhammad Aldiansyah"),
+          child: Text(
+            'Muhammad Aldiansyah',
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.green,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
       ),
     );
