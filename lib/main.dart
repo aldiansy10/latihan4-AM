@@ -12,8 +12,22 @@ class MyWidget extends StatelessWidget {
     return MaterialApp(
       title: "Aplikasi Mahasiswa",
       debugShowCheckedModeBanner: false,
+
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.green,
+        ),
+        scaffoldBackgroundColor: Colors.green.shade50,
+      ),
+
       home: Scaffold(
-        body: Center(
+        appBar: AppBar(
+          title: const Text("Aplikasi Mahasiswa"),
+          backgroundColor: Colors.green,
+          foregroundColor: Colors.white,
+        ),
+
+        body: const Center(
           child: Text("Muhammad Aldiansyah"),
         ),
       ),
